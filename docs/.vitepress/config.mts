@@ -23,7 +23,7 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/chenmingyong0423' }
+      { icon: 'github', link: 'https://github.com/chenmingyong0423/go-algorithms-book' }
     ],
     editLink: {
       pattern: ({ filePath }) => {
