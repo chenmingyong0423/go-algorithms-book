@@ -22,9 +22,17 @@ export default defineConfig({
         ]
       }
     ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/chenmingyong0423' }
-    ]
+    ],
+    editLink: {
+      pattern: ({ filePath }) => {
+        if (filePath.startsWith('packages/')) {
+          return `https://github.com/chenmingyong0423/go-algorithms-book/edit/main/${filePath}`
+        } else {
+          return `https://github.com/chenmingyong0423/go-algorithms-book/edit/main/docs/${filePath}`
+        }
+      }
+    }
   },
 })
